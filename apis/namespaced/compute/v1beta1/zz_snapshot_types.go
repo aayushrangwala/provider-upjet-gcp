@@ -118,7 +118,7 @@ type SnapshotInitParameters struct {
 	SnapshotType *string `json:"snapshotType,omitempty" tf:"snapshot_type,omitempty"`
 
 	// A reference to the disk used to create this snapshot.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Disk
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Disk
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	SourceDisk *string `json:"sourceDisk,omitempty" tf:"source_disk,omitempty"`
 
@@ -299,7 +299,7 @@ type SnapshotParameters struct {
 	SnapshotType *string `json:"snapshotType,omitempty" tf:"snapshot_type,omitempty"`
 
 	// A reference to the disk used to create this snapshot.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Disk
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Disk
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	SourceDisk *string `json:"sourceDisk,omitempty" tf:"source_disk,omitempty"`

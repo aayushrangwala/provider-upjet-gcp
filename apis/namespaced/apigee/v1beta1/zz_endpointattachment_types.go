@@ -19,8 +19,8 @@ type EndpointAttachmentInitParameters struct {
 
 	Location *string `json:"location,omitempty" tf:"location,omitempty"`
 
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.ServiceAttachment
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/common.ExtractResourceID()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.ServiceAttachment
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/common.ExtractResourceID()
 	ServiceAttachment *string `json:"serviceAttachment,omitempty" tf:"service_attachment,omitempty"`
 
 	// Reference to a ServiceAttachment in compute to populate serviceAttachment.
@@ -61,8 +61,8 @@ type EndpointAttachmentParameters struct {
 	// +kubebuilder:validation:Required
 	OrgID *string `json:"orgId" tf:"org_id,omitempty"`
 
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.ServiceAttachment
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/common.ExtractResourceID()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.ServiceAttachment
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/common.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	ServiceAttachment *string `json:"serviceAttachment,omitempty" tf:"service_attachment,omitempty"`
 

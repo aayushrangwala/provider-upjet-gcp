@@ -392,7 +392,7 @@ type LeaderInitParameters struct {
 
 	// A fully-qualified URL of the zonal Network Endpoint Group (NEG) that the leader is
 	// attached to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.NetworkEndpointGroup
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.NetworkEndpointGroup
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("self_link",true)
 	BackendGroup *string `json:"backendGroup,omitempty" tf:"backend_group,omitempty"`
 
@@ -413,7 +413,7 @@ type LeaderNetworkEndpointInitParameters struct {
 
 	// The name of the VM instance of the leader network endpoint. The instance must
 	// already be attached to the NEG specified in the haPolicy.leader.backendGroup.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Instance
 	Instance *string `json:"instance,omitempty" tf:"instance,omitempty"`
 
 	// Reference to a Instance in compute to populate instance.
@@ -436,7 +436,7 @@ type LeaderNetworkEndpointParameters struct {
 
 	// The name of the VM instance of the leader network endpoint. The instance must
 	// already be attached to the NEG specified in the haPolicy.leader.backendGroup.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Instance
 	// +kubebuilder:validation:Optional
 	Instance *string `json:"instance,omitempty" tf:"instance,omitempty"`
 
@@ -464,7 +464,7 @@ type LeaderParameters struct {
 
 	// A fully-qualified URL of the zonal Network Endpoint Group (NEG) that the leader is
 	// attached to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.NetworkEndpointGroup
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.NetworkEndpointGroup
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("self_link",true)
 	// +kubebuilder:validation:Optional
 	BackendGroup *string `json:"backendGroup,omitempty" tf:"backend_group,omitempty"`
@@ -634,8 +634,8 @@ type RegionBackendServiceBackendInitParameters struct {
 	// Note that you must specify an Instance Group or Network Endpoint
 	// Group resource using the fully-qualified URL, rather than a
 	// partial URL.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.RegionInstanceGroupManager
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/compute.InstanceGroupExtractor()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.RegionInstanceGroupManager
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/compute.InstanceGroupExtractor()
 	Group *string `json:"group,omitempty" tf:"group,omitempty"`
 
 	// Reference to a RegionInstanceGroupManager in compute to populate group.
@@ -855,8 +855,8 @@ type RegionBackendServiceBackendParameters struct {
 	// Note that you must specify an Instance Group or Network Endpoint
 	// Group resource using the fully-qualified URL, rather than a
 	// partial URL.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.RegionInstanceGroupManager
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/compute.InstanceGroupExtractor()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.RegionInstanceGroupManager
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/compute.InstanceGroupExtractor()
 	// +kubebuilder:validation:Optional
 	Group *string `json:"group,omitempty" tf:"group,omitempty"`
 
@@ -1525,8 +1525,8 @@ type RegionBackendServiceInitParameters struct {
 	// check can be specified.
 	// A health check must be specified unless the backend service uses an internet
 	// or serverless NEG as a backend.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.RegionHealthCheck
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/common.SelfLinkExtractor()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.RegionHealthCheck
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/common.SelfLinkExtractor()
 	// +listType=set
 	HealthChecks []*string `json:"healthChecks,omitempty" tf:"health_checks,omitempty"`
 
@@ -1563,7 +1563,7 @@ type RegionBackendServiceInitParameters struct {
 	// This field must be set for Internal Passthrough Network Load Balancers when the haPolicy is enabled, and for External Passthrough Network Load Balancers when the haPolicy fastIpMove is enabled.
 	// This field can only be specified when the load balancing scheme is set to INTERNAL, or when the load balancing scheme is set to EXTERNAL and haPolicy fastIpMove is enabled.
 	// Changes to this field force recreation of the resource.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	Network *string `json:"network,omitempty" tf:"network,omitempty"`
 
@@ -2163,8 +2163,8 @@ type RegionBackendServiceParameters struct {
 	// check can be specified.
 	// A health check must be specified unless the backend service uses an internet
 	// or serverless NEG as a backend.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.RegionHealthCheck
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/common.SelfLinkExtractor()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.RegionHealthCheck
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/common.SelfLinkExtractor()
 	// +kubebuilder:validation:Optional
 	// +listType=set
 	HealthChecks []*string `json:"healthChecks,omitempty" tf:"health_checks,omitempty"`
@@ -2207,7 +2207,7 @@ type RegionBackendServiceParameters struct {
 	// This field must be set for Internal Passthrough Network Load Balancers when the haPolicy is enabled, and for External Passthrough Network Load Balancers when the haPolicy fastIpMove is enabled.
 	// This field can only be specified when the load balancing scheme is set to INTERNAL, or when the load balancing scheme is set to EXTERNAL and haPolicy fastIpMove is enabled.
 	// Changes to this field force recreation of the resource.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Network *string `json:"network,omitempty" tf:"network,omitempty"`

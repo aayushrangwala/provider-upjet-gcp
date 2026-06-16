@@ -35,8 +35,8 @@ type RegionTargetHTTPProxyInitParameters struct {
 
 	// A reference to the RegionUrlMap resource that defines the mapping from URL
 	// to the BackendService.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.RegionURLMap
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/cluster/common.SelfLinkExtractor()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.RegionURLMap
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/cluster/common.SelfLinkExtractor()
 	URLMap *string `json:"urlMap,omitempty" tf:"url_map,omitempty"`
 
 	// Reference to a RegionURLMap in compute to populate urlMap.
@@ -120,8 +120,8 @@ type RegionTargetHTTPProxyParameters struct {
 
 	// A reference to the RegionUrlMap resource that defines the mapping from URL
 	// to the BackendService.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.RegionURLMap
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/cluster/common.SelfLinkExtractor()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.RegionURLMap
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/cluster/common.SelfLinkExtractor()
 	// +kubebuilder:validation:Optional
 	URLMap *string `json:"urlMap,omitempty" tf:"url_map,omitempty"`
 

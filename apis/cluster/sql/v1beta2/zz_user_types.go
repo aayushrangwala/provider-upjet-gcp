@@ -114,7 +114,7 @@ type UserInitParameters struct {
 
 	// The name of the Cloud SQL instance. Changing this
 	// forces a new resource to be created.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/sql/v1beta2.DatabaseInstance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/sql/v1beta2.DatabaseInstance
 	Instance *string `json:"instance,omitempty" tf:"instance,omitempty"`
 
 	// Reference to a DatabaseInstance in sql to populate instance.
@@ -237,7 +237,7 @@ type UserParameters struct {
 
 	// The name of the Cloud SQL instance. Changing this
 	// forces a new resource to be created.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/sql/v1beta2.DatabaseInstance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/sql/v1beta2.DatabaseInstance
 	// +kubebuilder:validation:Optional
 	Instance *string `json:"instance,omitempty" tf:"instance,omitempty"`
 

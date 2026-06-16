@@ -25,7 +25,7 @@ type GlobalNetworkEndpointInitParameters struct {
 	Fqdn *string `json:"fqdn,omitempty" tf:"fqdn,omitempty"`
 
 	// The global network endpoint group this endpoint is part of.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.GlobalNetworkEndpointGroup
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.GlobalNetworkEndpointGroup
 	GlobalNetworkEndpointGroup *string `json:"globalNetworkEndpointGroup,omitempty" tf:"global_network_endpoint_group,omitempty"`
 
 	// Reference to a GlobalNetworkEndpointGroup in compute to populate globalNetworkEndpointGroup.
@@ -87,7 +87,7 @@ type GlobalNetworkEndpointParameters struct {
 	Fqdn *string `json:"fqdn,omitempty" tf:"fqdn,omitempty"`
 
 	// The global network endpoint group this endpoint is part of.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.GlobalNetworkEndpointGroup
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.GlobalNetworkEndpointGroup
 	// +kubebuilder:validation:Optional
 	GlobalNetworkEndpointGroup *string `json:"globalNetworkEndpointGroup,omitempty" tf:"global_network_endpoint_group,omitempty"`
 

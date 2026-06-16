@@ -121,7 +121,7 @@ type AddonsConfigInitParameters struct {
 	DeletionPolicy *string `json:"deletionPolicy,omitempty" tf:"deletion_policy,omitempty"`
 
 	// Name of the Apigee organization.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/apigee/v1beta2.Organization
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/apigee/v1beta2.Organization
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	Org *string `json:"org,omitempty" tf:"org,omitempty"`
 
@@ -164,7 +164,7 @@ type AddonsConfigParameters struct {
 	DeletionPolicy *string `json:"deletionPolicy,omitempty" tf:"deletion_policy,omitempty"`
 
 	// Name of the Apigee organization.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/apigee/v1beta2.Organization
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/apigee/v1beta2.Organization
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	// +kubebuilder:validation:Optional
 	Org *string `json:"org,omitempty" tf:"org,omitempty"`

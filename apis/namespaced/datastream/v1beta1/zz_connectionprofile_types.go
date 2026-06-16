@@ -670,7 +670,7 @@ type OracleProfileParameters struct {
 type PostgresqlProfileInitParameters struct {
 
 	// Database for the PostgreSQL connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.Database
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.Database
 	Database *string `json:"database,omitempty" tf:"database,omitempty"`
 
 	// Reference to a Database in sql to populate database.
@@ -682,7 +682,7 @@ type PostgresqlProfileInitParameters struct {
 	DatabaseSelector *v1.NamespacedSelector `json:"databaseSelector,omitempty" tf:"-"`
 
 	// Hostname for the PostgreSQL connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.DatabaseInstance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.DatabaseInstance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("public_ip_address",true)
 	Hostname *string `json:"hostname,omitempty" tf:"hostname,omitempty"`
 
@@ -709,7 +709,7 @@ type PostgresqlProfileInitParameters struct {
 	SecretManagerStoredPassword *string `json:"secretManagerStoredPassword,omitempty" tf:"secret_manager_stored_password,omitempty"`
 
 	// Username for the PostgreSQL connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.User
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.User
 	Username *string `json:"username,omitempty" tf:"username,omitempty"`
 
 	// Reference to a User in sql to populate username.
@@ -746,7 +746,7 @@ type PostgresqlProfileObservation struct {
 type PostgresqlProfileParameters struct {
 
 	// Database for the PostgreSQL connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.Database
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.Database
 	// +kubebuilder:validation:Optional
 	Database *string `json:"database,omitempty" tf:"database,omitempty"`
 
@@ -759,7 +759,7 @@ type PostgresqlProfileParameters struct {
 	DatabaseSelector *v1.NamespacedSelector `json:"databaseSelector,omitempty" tf:"-"`
 
 	// Hostname for the PostgreSQL connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.DatabaseInstance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.DatabaseInstance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("public_ip_address",true)
 	// +kubebuilder:validation:Optional
 	Hostname *string `json:"hostname,omitempty" tf:"hostname,omitempty"`
@@ -791,7 +791,7 @@ type PostgresqlProfileParameters struct {
 	SecretManagerStoredPassword *string `json:"secretManagerStoredPassword,omitempty" tf:"secret_manager_stored_password,omitempty"`
 
 	// Username for the PostgreSQL connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.User
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.User
 	// +kubebuilder:validation:Optional
 	Username *string `json:"username,omitempty" tf:"username,omitempty"`
 
@@ -848,7 +848,7 @@ type PostgresqlProfileSSLConfigParameters struct {
 type PrivateConnectivityInitParameters struct {
 
 	// A reference to a private connection resource. Format: projects/{project}/locations/{location}/privateConnections/{name}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/datastream/v1beta1.PrivateConnection
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/datastream/v1beta1.PrivateConnection
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	PrivateConnection *string `json:"privateConnection,omitempty" tf:"private_connection,omitempty"`
 
@@ -870,7 +870,7 @@ type PrivateConnectivityObservation struct {
 type PrivateConnectivityParameters struct {
 
 	// A reference to a private connection resource. Format: projects/{project}/locations/{location}/privateConnections/{name}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/datastream/v1beta1.PrivateConnection
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/datastream/v1beta1.PrivateConnection
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	PrivateConnection *string `json:"privateConnection,omitempty" tf:"private_connection,omitempty"`
@@ -887,7 +887,7 @@ type PrivateConnectivityParameters struct {
 type SQLServerProfileInitParameters struct {
 
 	// Database for the SQL Server connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.Database
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.Database
 	Database *string `json:"database,omitempty" tf:"database,omitempty"`
 
 	// Reference to a Database in sql to populate database.
@@ -899,7 +899,7 @@ type SQLServerProfileInitParameters struct {
 	DatabaseSelector *v1.NamespacedSelector `json:"databaseSelector,omitempty" tf:"-"`
 
 	// Hostname for the SQL Server connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.DatabaseInstance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.DatabaseInstance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("public_ip_address",true)
 	Hostname *string `json:"hostname,omitempty" tf:"hostname,omitempty"`
 
@@ -922,7 +922,7 @@ type SQLServerProfileInitParameters struct {
 	SecretManagerStoredPassword *string `json:"secretManagerStoredPassword,omitempty" tf:"secret_manager_stored_password,omitempty"`
 
 	// Username for the SQL Server connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.User
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.User
 	Username *string `json:"username,omitempty" tf:"username,omitempty"`
 
 	// Reference to a User in sql to populate username.
@@ -955,7 +955,7 @@ type SQLServerProfileObservation struct {
 type SQLServerProfileParameters struct {
 
 	// Database for the SQL Server connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.Database
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.Database
 	// +kubebuilder:validation:Optional
 	Database *string `json:"database,omitempty" tf:"database,omitempty"`
 
@@ -968,7 +968,7 @@ type SQLServerProfileParameters struct {
 	DatabaseSelector *v1.NamespacedSelector `json:"databaseSelector,omitempty" tf:"-"`
 
 	// Hostname for the SQL Server connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.DatabaseInstance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.DatabaseInstance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("public_ip_address",true)
 	// +kubebuilder:validation:Optional
 	Hostname *string `json:"hostname,omitempty" tf:"hostname,omitempty"`
@@ -995,7 +995,7 @@ type SQLServerProfileParameters struct {
 	SecretManagerStoredPassword *string `json:"secretManagerStoredPassword,omitempty" tf:"secret_manager_stored_password,omitempty"`
 
 	// Username for the SQL Server connection.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/sql/v1beta1.User
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/sql/v1beta1.User
 	// +kubebuilder:validation:Optional
 	Username *string `json:"username,omitempty" tf:"username,omitempty"`
 

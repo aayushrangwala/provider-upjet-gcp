@@ -9,7 +9,7 @@ import (
 
 	"github.com/crossplane/upjet/v2/pkg/controller"
 
-	note "github.com/upbound/provider-gcp/v2/internal/controller/namespaced/containeranalysis/note"
+	note "github.com/aayushrangwala/provider-upjet-gcp/v2/internal/controller/namespaced/containeranalysis/note"
 )
 
 // Setup_containeranalysis creates all controllers with the supplied logger and adds them to

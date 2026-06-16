@@ -9,7 +9,7 @@ import (
 
 	"github.com/crossplane/upjet/v2/pkg/controller"
 
-	contact "github.com/upbound/provider-gcp/v2/internal/controller/cluster/essentialcontacts/contact"
+	contact "github.com/aayushrangwala/provider-upjet-gcp/v2/internal/controller/cluster/essentialcontacts/contact"
 )
 
 // Setup_essentialcontacts creates all controllers with the supplied logger and adds them to

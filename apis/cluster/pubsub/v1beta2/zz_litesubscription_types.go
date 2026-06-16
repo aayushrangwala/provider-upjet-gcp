@@ -53,7 +53,7 @@ type LiteSubscriptionInitParameters struct {
 	Region *string `json:"region,omitempty" tf:"region,omitempty"`
 
 	// A reference to a Topic resource.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/pubsub/v1beta2.LiteTopic
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/pubsub/v1beta2.LiteTopic
 	Topic *string `json:"topic,omitempty" tf:"topic,omitempty"`
 
 	// Reference to a LiteTopic in pubsub to populate topic.
@@ -114,7 +114,7 @@ type LiteSubscriptionParameters struct {
 	Region *string `json:"region,omitempty" tf:"region,omitempty"`
 
 	// A reference to a Topic resource.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/pubsub/v1beta2.LiteTopic
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/pubsub/v1beta2.LiteTopic
 	// +kubebuilder:validation:Optional
 	Topic *string `json:"topic,omitempty" tf:"topic,omitempty"`
 

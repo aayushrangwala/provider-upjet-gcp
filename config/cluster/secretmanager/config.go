@@ -5,7 +5,7 @@
 package secretmanager
 
 import (
-	"github.com/upbound/provider-gcp/v2/config/cluster/common"
+	"github.com/aayushrangwala/provider-upjet-gcp/v2/config/cluster/common"
 
 	"github.com/crossplane/upjet/v2/pkg/config"
 )

@@ -852,7 +852,7 @@ type NetworkConfigInitParameters struct {
 
 	// The resource link for the VPC network in which cluster resources are created and from which they are accessible via Private IP. The network must belong to the same project as the cluster.
 	// It is specified in the form: "projects/{projectNumber}/global/networks/{network_id}".
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	Network *string `json:"network,omitempty" tf:"network,omitempty"`
 
@@ -885,7 +885,7 @@ type NetworkConfigParameters struct {
 
 	// The resource link for the VPC network in which cluster resources are created and from which they are accessible via Private IP. The network must belong to the same project as the cluster.
 	// It is specified in the form: "projects/{projectNumber}/global/networks/{network_id}".
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Network *string `json:"network,omitempty" tf:"network,omitempty"`
@@ -945,7 +945,7 @@ type QuantityBasedRetentionParameters struct {
 type RestoreBackupSourceInitParameters struct {
 
 	// The name of the backup that this cluster is restored from.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/alloydb/v1beta2.Backup
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/alloydb/v1beta2.Backup
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	BackupName *string `json:"backupName,omitempty" tf:"backup_name,omitempty"`
 
@@ -967,7 +967,7 @@ type RestoreBackupSourceObservation struct {
 type RestoreBackupSourceParameters struct {
 
 	// The name of the backup that this cluster is restored from.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/alloydb/v1beta2.Backup
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/alloydb/v1beta2.Backup
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	// +kubebuilder:validation:Optional
 	BackupName *string `json:"backupName,omitempty" tf:"backup_name,omitempty"`
@@ -1032,7 +1032,7 @@ type RestoreBackupdrPitrSourceParameters struct {
 type RestoreContinuousBackupSourceInitParameters struct {
 
 	// The name of the source cluster that this cluster is restored from.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/alloydb/v1beta2.Cluster
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/alloydb/v1beta2.Cluster
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	Cluster *string `json:"cluster,omitempty" tf:"cluster,omitempty"`
 
@@ -1060,7 +1060,7 @@ type RestoreContinuousBackupSourceObservation struct {
 type RestoreContinuousBackupSourceParameters struct {
 
 	// The name of the source cluster that this cluster is restored from.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/alloydb/v1beta2.Cluster
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/alloydb/v1beta2.Cluster
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	// +kubebuilder:validation:Optional
 	Cluster *string `json:"cluster,omitempty" tf:"cluster,omitempty"`
@@ -1082,7 +1082,7 @@ type SecondaryConfigInitParameters struct {
 
 	// Name of the primary cluster must be in the format
 	// 'projects/{project}/locations/{location}/clusters/{cluster_id}'
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/alloydb/v1beta2.Cluster
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/alloydb/v1beta2.Cluster
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	PrimaryClusterName *string `json:"primaryClusterName,omitempty" tf:"primary_cluster_name,omitempty"`
 
@@ -1106,7 +1106,7 @@ type SecondaryConfigParameters struct {
 
 	// Name of the primary cluster must be in the format
 	// 'projects/{project}/locations/{location}/clusters/{cluster_id}'
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/alloydb/v1beta2.Cluster
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/alloydb/v1beta2.Cluster
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	// +kubebuilder:validation:Optional
 	PrimaryClusterName *string `json:"primaryClusterName,omitempty" tf:"primary_cluster_name,omitempty"`

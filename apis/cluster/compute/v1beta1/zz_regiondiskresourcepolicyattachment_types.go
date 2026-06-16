@@ -20,7 +20,7 @@ type RegionDiskResourcePolicyAttachmentInitParameters struct {
 	DeletionPolicy *string `json:"deletionPolicy,omitempty" tf:"deletion_policy,omitempty"`
 
 	// The name of the regional disk in which the resource policies are attached to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.RegionDisk
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.RegionDisk
 	Disk *string `json:"disk,omitempty" tf:"disk,omitempty"`
 
 	// Reference to a RegionDisk in compute to populate disk.
@@ -33,7 +33,7 @@ type RegionDiskResourcePolicyAttachmentInitParameters struct {
 
 	// The resource policy to be attached to the disk for scheduling snapshot
 	// creation. Do not specify the self link.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.ResourcePolicy
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.ResourcePolicy
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
 	// Reference to a ResourcePolicy in compute to populate name.
@@ -84,7 +84,7 @@ type RegionDiskResourcePolicyAttachmentParameters struct {
 	DeletionPolicy *string `json:"deletionPolicy,omitempty" tf:"deletion_policy,omitempty"`
 
 	// The name of the regional disk in which the resource policies are attached to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.RegionDisk
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.RegionDisk
 	// +kubebuilder:validation:Optional
 	Disk *string `json:"disk,omitempty" tf:"disk,omitempty"`
 
@@ -98,7 +98,7 @@ type RegionDiskResourcePolicyAttachmentParameters struct {
 
 	// The resource policy to be attached to the disk for scheduling snapshot
 	// creation. Do not specify the self link.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.ResourcePolicy
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.ResourcePolicy
 	// +kubebuilder:validation:Optional
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 

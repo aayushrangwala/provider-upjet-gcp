@@ -902,7 +902,7 @@ type IPConfigurationInitParameters struct {
 	// Specifying a network enables private IP.
 	// At least ipv4_enabled must be enabled or a private_network must be configured.
 	// This setting can be updated, but it cannot be removed after it is set.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("self_link",true)
 	PrivateNetwork *string `json:"privateNetwork,omitempty" tf:"private_network,omitempty"`
 
@@ -999,7 +999,7 @@ type IPConfigurationParameters struct {
 	// Specifying a network enables private IP.
 	// At least ipv4_enabled must be enabled or a private_network must be configured.
 	// This setting can be updated, but it cannot be removed after it is set.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("self_link",true)
 	// +kubebuilder:validation:Optional
 	PrivateNetwork *string `json:"privateNetwork,omitempty" tf:"private_network,omitempty"`

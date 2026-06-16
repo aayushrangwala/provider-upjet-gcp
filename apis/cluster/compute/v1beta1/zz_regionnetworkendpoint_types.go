@@ -32,7 +32,7 @@ type RegionNetworkEndpointInitParameters struct {
 
 	// The name for a specific VM instance that the IP address belongs to.
 	// This is required for network endpoints of type GCE_VM_IP_PORTMAP.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.Instance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.Instance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("self_link",true)
 	Instance *string `json:"instance,omitempty" tf:"instance,omitempty"`
 
@@ -55,7 +55,7 @@ type RegionNetworkEndpointInitParameters struct {
 	Region *string `json:"region,omitempty" tf:"region,omitempty"`
 
 	// The network endpoint group this endpoint is part of.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.RegionNetworkEndpointGroup
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.RegionNetworkEndpointGroup
 	RegionNetworkEndpointGroup *string `json:"regionNetworkEndpointGroup,omitempty" tf:"region_network_endpoint_group,omitempty"`
 
 	// Reference to a RegionNetworkEndpointGroup in compute to populate regionNetworkEndpointGroup.
@@ -131,7 +131,7 @@ type RegionNetworkEndpointParameters struct {
 
 	// The name for a specific VM instance that the IP address belongs to.
 	// This is required for network endpoints of type GCE_VM_IP_PORTMAP.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.Instance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.Instance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("self_link",true)
 	// +kubebuilder:validation:Optional
 	Instance *string `json:"instance,omitempty" tf:"instance,omitempty"`
@@ -158,7 +158,7 @@ type RegionNetworkEndpointParameters struct {
 	Region *string `json:"region,omitempty" tf:"region,omitempty"`
 
 	// The network endpoint group this endpoint is part of.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/compute/v1beta2.RegionNetworkEndpointGroup
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/compute/v1beta2.RegionNetworkEndpointGroup
 	// +kubebuilder:validation:Optional
 	RegionNetworkEndpointGroup *string `json:"regionNetworkEndpointGroup,omitempty" tf:"region_network_endpoint_group,omitempty"`
 

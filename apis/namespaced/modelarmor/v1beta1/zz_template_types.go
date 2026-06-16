@@ -212,8 +212,8 @@ type SdpSettingsAdvancedConfigInitParameters struct {
 	// in inspect template.
 	// e.g.
 	// projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/datalossprevention/v1beta1.DeidentifyTemplate
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/common.ExtractResourceID()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/datalossprevention/v1beta1.DeidentifyTemplate
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/common.ExtractResourceID()
 	DeidentifyTemplate *string `json:"deidentifyTemplate,omitempty" tf:"deidentify_template,omitempty"`
 
 	// Reference to a DeidentifyTemplate in datalossprevention to populate deidentifyTemplate.
@@ -231,8 +231,8 @@ type SdpSettingsAdvancedConfigInitParameters struct {
 	// inspection will be returned as SdpFinding in SdpInsepctionResult.
 	// e.g:-
 	// projects/{project}/locations/{location}/inspectTemplates/{inspect_template}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/datalossprevention/v1beta1.InspectTemplate
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/common.ExtractResourceID()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/datalossprevention/v1beta1.InspectTemplate
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/common.ExtractResourceID()
 	InspectTemplate *string `json:"inspectTemplate,omitempty" tf:"inspect_template,omitempty"`
 
 	// Reference to a InspectTemplate in datalossprevention to populate inspectTemplate.
@@ -276,8 +276,8 @@ type SdpSettingsAdvancedConfigParameters struct {
 	// in inspect template.
 	// e.g.
 	// projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/datalossprevention/v1beta1.DeidentifyTemplate
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/common.ExtractResourceID()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/datalossprevention/v1beta1.DeidentifyTemplate
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/common.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	DeidentifyTemplate *string `json:"deidentifyTemplate,omitempty" tf:"deidentify_template,omitempty"`
 
@@ -296,8 +296,8 @@ type SdpSettingsAdvancedConfigParameters struct {
 	// inspection will be returned as SdpFinding in SdpInsepctionResult.
 	// e.g:-
 	// projects/{project}/locations/{location}/inspectTemplates/{inspect_template}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/datalossprevention/v1beta1.InspectTemplate
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-gcp/v2/config/namespaced/common.ExtractResourceID()
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/datalossprevention/v1beta1.InspectTemplate
+	// +crossplane:generate:reference:extractor=github.com/aayushrangwala/provider-upjet-gcp/v2/config/namespaced/common.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	InspectTemplate *string `json:"inspectTemplate,omitempty" tf:"inspect_template,omitempty"`
 

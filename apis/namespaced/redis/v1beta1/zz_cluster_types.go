@@ -168,7 +168,7 @@ type ClusterInitParameters struct {
 	// The resource name of the server CA pool for an instance with SERVER_CA_MODE_CUSTOMER_MANAGED_CAS_CA
 	// as the server_ca_mode.
 	// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/privateca/v1beta1.CAPool
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/privateca/v1beta1.CAPool
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	ServerCAPool *string `json:"serverCaPool,omitempty" tf:"server_ca_pool,omitempty"`
 
@@ -467,7 +467,7 @@ type ClusterParameters struct {
 	// The resource name of the server CA pool for an instance with SERVER_CA_MODE_CUSTOMER_MANAGED_CAS_CA
 	// as the server_ca_mode.
 	// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/privateca/v1beta1.CAPool
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/privateca/v1beta1.CAPool
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	ServerCAPool *string `json:"serverCaPool,omitempty" tf:"server_ca_pool,omitempty"`
@@ -548,7 +548,7 @@ type CrossClusterReplicationConfigParameters struct {
 type CrossClusterReplicationConfigPrimaryClusterInitParameters struct {
 
 	// The full resource path of the secondary cluster in the format: projects/{project}/locations/{region}/clusters/{cluster-id}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/redis/v1beta1.Cluster
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/redis/v1beta1.Cluster
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	Cluster *string `json:"cluster,omitempty" tf:"cluster,omitempty"`
 
@@ -573,7 +573,7 @@ type CrossClusterReplicationConfigPrimaryClusterObservation struct {
 type CrossClusterReplicationConfigPrimaryClusterParameters struct {
 
 	// The full resource path of the secondary cluster in the format: projects/{project}/locations/{region}/clusters/{cluster-id}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/redis/v1beta1.Cluster
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/redis/v1beta1.Cluster
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Cluster *string `json:"cluster,omitempty" tf:"cluster,omitempty"`
@@ -870,7 +870,7 @@ type PscConfigsInitParameters struct {
 	// Required. The consumer network where the network address of
 	// the discovery endpoint will be reserved, in the form of
 	// projects/{network_project_id_or_number}/global/networks/{network_id}.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	Network *string `json:"network,omitempty" tf:"network,omitempty"`
 
@@ -896,7 +896,7 @@ type PscConfigsParameters struct {
 	// Required. The consumer network where the network address of
 	// the discovery endpoint will be reserved, in the form of
 	// projects/{network_project_id_or_number}/global/networks/{network_id}.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Network *string `json:"network,omitempty" tf:"network,omitempty"`

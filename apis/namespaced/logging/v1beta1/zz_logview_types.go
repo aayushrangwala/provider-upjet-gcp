@@ -61,7 +61,7 @@ type LogViewObservation struct {
 type LogViewParameters struct {
 
 	// The bucket of the resource
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/logging/v1beta1.ProjectBucketConfig
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/logging/v1beta1.ProjectBucketConfig
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Bucket *string `json:"bucket,omitempty" tf:"bucket,omitempty"`

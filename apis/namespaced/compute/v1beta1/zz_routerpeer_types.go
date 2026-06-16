@@ -267,7 +267,7 @@ type RouterPeerInitParameters struct {
 	ImportPolicies []*string `json:"importPolicies,omitempty" tf:"import_policies,omitempty"`
 
 	// Name of the interface the BGP peer is associated with.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.RouterInterface
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.RouterInterface
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",false)
 	Interface *string `json:"interface,omitempty" tf:"interface,omitempty"`
 
@@ -289,7 +289,7 @@ type RouterPeerInitParameters struct {
 
 	// IP address of the BGP interface outside Google Cloud Platform.
 	// Only IPv4 is supported. Required if ip_address is set.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Address
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Address
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("address",false)
 	PeerIPAddress *string `json:"peerIpAddress,omitempty" tf:"peer_ip_address,omitempty"`
 
@@ -316,7 +316,7 @@ type RouterPeerInitParameters struct {
 
 	// Region where the router and BgpPeer reside.
 	// If it is not provided, the provider region is used.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Router
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Router
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("region",false)
 	Region *string `json:"region,omitempty" tf:"region,omitempty"`
 
@@ -332,7 +332,7 @@ type RouterPeerInitParameters struct {
 	// such as Next Gen Firewalls, Virtual Routers, or Router Appliances.
 	// The VM instance must be located in zones contained in the same region as
 	// this Cloud Router. The VM instance is the peer side of the BGP session.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Instance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("self_link",true)
 	RouterApplianceInstance *string `json:"routerApplianceInstance,omitempty" tf:"router_appliance_instance,omitempty"`
 
@@ -586,7 +586,7 @@ type RouterPeerParameters struct {
 	ImportPolicies []*string `json:"importPolicies,omitempty" tf:"import_policies,omitempty"`
 
 	// Name of the interface the BGP peer is associated with.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.RouterInterface
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.RouterInterface
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",false)
 	// +kubebuilder:validation:Optional
 	Interface *string `json:"interface,omitempty" tf:"interface,omitempty"`
@@ -611,7 +611,7 @@ type RouterPeerParameters struct {
 
 	// IP address of the BGP interface outside Google Cloud Platform.
 	// Only IPv4 is supported. Required if ip_address is set.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Address
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Address
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("address",false)
 	// +kubebuilder:validation:Optional
 	PeerIPAddress *string `json:"peerIpAddress,omitempty" tf:"peer_ip_address,omitempty"`
@@ -642,7 +642,7 @@ type RouterPeerParameters struct {
 
 	// Region where the router and BgpPeer reside.
 	// If it is not provided, the provider region is used.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Router
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Router
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("region",false)
 	// +kubebuilder:validation:Optional
 	Region *string `json:"region,omitempty" tf:"region,omitempty"`
@@ -656,7 +656,7 @@ type RouterPeerParameters struct {
 	RegionSelector *v1.NamespacedSelector `json:"regionSelector,omitempty" tf:"-"`
 
 	// The name of the Cloud Router in which this BgpPeer will be configured.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Router
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Router
 	// +kubebuilder:validation:Optional
 	Router *string `json:"router,omitempty" tf:"router,omitempty"`
 
@@ -664,7 +664,7 @@ type RouterPeerParameters struct {
 	// such as Next Gen Firewalls, Virtual Routers, or Router Appliances.
 	// The VM instance must be located in zones contained in the same region as
 	// this Cloud Router. The VM instance is the peer side of the BGP session.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Instance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("self_link",true)
 	// +kubebuilder:validation:Optional
 	RouterApplianceInstance *string `json:"routerApplianceInstance,omitempty" tf:"router_appliance_instance,omitempty"`

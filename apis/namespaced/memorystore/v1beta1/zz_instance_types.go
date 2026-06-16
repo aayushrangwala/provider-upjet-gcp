@@ -166,7 +166,7 @@ type CrossInstanceReplicationConfigParameters struct {
 type CrossInstanceReplicationConfigPrimaryInstanceInitParameters struct {
 
 	// The full resource path of the Nth instance in the format: projects/{project}/locations/{region}/instance/{instance-id}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/memorystore/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/memorystore/v1beta1.Instance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	Instance *string `json:"instance,omitempty" tf:"instance,omitempty"`
 
@@ -191,7 +191,7 @@ type CrossInstanceReplicationConfigPrimaryInstanceObservation struct {
 type CrossInstanceReplicationConfigPrimaryInstanceParameters struct {
 
 	// The full resource path of the Nth instance in the format: projects/{project}/locations/{region}/instance/{instance-id}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/memorystore/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/memorystore/v1beta1.Instance
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Instance *string `json:"instance,omitempty" tf:"instance,omitempty"`
@@ -210,7 +210,7 @@ type DesiredAutoCreatedEndpointsInitParameters struct {
 	// (Output)
 	// Output only. The consumer network where the IP address resides, in the form of
 	// projects/{project_id}/global/networks/{network_id}.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	Network *string `json:"network,omitempty" tf:"network,omitempty"`
 
@@ -244,7 +244,7 @@ type DesiredAutoCreatedEndpointsParameters struct {
 	// (Output)
 	// Output only. The consumer network where the IP address resides, in the form of
 	// projects/{project_id}/global/networks/{network_id}.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/compute/v1beta1.Network
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/compute/v1beta1.Network
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Network *string `json:"network,omitempty" tf:"network,omitempty"`
@@ -483,7 +483,7 @@ type InstanceInitParameters struct {
 	// The resource name of the server CA pool for an instance with CUSTOMER_MANAGED_CAS_CA
 	// as the server_ca_mode.
 	// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/privateca/v1beta1.CAPool
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/privateca/v1beta1.CAPool
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	ServerCAPool *string `json:"serverCaPool,omitempty" tf:"server_ca_pool,omitempty"`
 
@@ -827,7 +827,7 @@ type InstanceParameters struct {
 	// The resource name of the server CA pool for an instance with CUSTOMER_MANAGED_CAS_CA
 	// as the server_ca_mode.
 	// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/privateca/v1beta1.CAPool
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/privateca/v1beta1.CAPool
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	ServerCAPool *string `json:"serverCaPool,omitempty" tf:"server_ca_pool,omitempty"`

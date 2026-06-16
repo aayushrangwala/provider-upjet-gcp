@@ -2,7 +2,7 @@
 //
 // SPDX-License-Identifier: CC0-1.0
 
-module github.com/upbound/provider-gcp/v2
+module github.com/aayushrangwala/provider-upjet-gcp/v2
 
 go 1.26.0
 

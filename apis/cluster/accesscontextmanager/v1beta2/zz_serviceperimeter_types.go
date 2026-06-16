@@ -752,7 +752,7 @@ type IngressPoliciesIngressFromSourcesInitParameters struct {
 	// with request origins within the perimeter.
 	// Example accessPolicies/MY_POLICY/accessLevels/MY_LEVEL.
 	// If * is specified, then all IngressSources will be allowed.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",false)
 	AccessLevel *string `json:"accessLevel,omitempty" tf:"access_level,omitempty"`
 
@@ -810,7 +810,7 @@ type IngressPoliciesIngressFromSourcesParameters struct {
 	// with request origins within the perimeter.
 	// Example accessPolicies/MY_POLICY/accessLevels/MY_LEVEL.
 	// If * is specified, then all IngressSources will be allowed.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",false)
 	// +kubebuilder:validation:Optional
 	AccessLevel *string `json:"accessLevel,omitempty" tf:"access_level,omitempty"`
@@ -1560,7 +1560,7 @@ type SpecInitParameters struct {
 	// origins within the perimeter. For Service Perimeter Bridge, must
 	// be empty.
 	// Format: accessPolicies/{policy_id}/accessLevels/{access_level_name}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
 	// +listType=set
 	AccessLevels []*string `json:"accessLevels,omitempty" tf:"access_levels,omitempty"`
 
@@ -1665,7 +1665,7 @@ type SpecParameters struct {
 	// origins within the perimeter. For Service Perimeter Bridge, must
 	// be empty.
 	// Format: accessPolicies/{policy_id}/accessLevels/{access_level_name}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
 	// +kubebuilder:validation:Optional
 	// +listType=set
 	AccessLevels []*string `json:"accessLevels,omitempty" tf:"access_levels,omitempty"`
@@ -1827,7 +1827,7 @@ type StatusInitParameters struct {
 	// origins within the perimeter. For Service Perimeter Bridge, must
 	// be empty.
 	// Format: accessPolicies/{policy_id}/accessLevels/{access_level_name}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
 	// +listType=set
 	AccessLevels []*string `json:"accessLevels,omitempty" tf:"access_levels,omitempty"`
 
@@ -1932,7 +1932,7 @@ type StatusParameters struct {
 	// origins within the perimeter. For Service Perimeter Bridge, must
 	// be empty.
 	// Format: accessPolicies/{policy_id}/accessLevels/{access_level_name}
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.AccessLevel
 	// +kubebuilder:validation:Optional
 	// +listType=set
 	AccessLevels []*string `json:"accessLevels,omitempty" tf:"access_levels,omitempty"`

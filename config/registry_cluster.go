@@ -15,8 +15,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/pkg/errors"
 
-	"github.com/upbound/provider-gcp/v2/config/cluster"
-	"github.com/upbound/provider-gcp/v2/hack"
+	"github.com/aayushrangwala/provider-upjet-gcp/v2/config/cluster"
+	"github.com/aayushrangwala/provider-upjet-gcp/v2/hack"
 )
 
 // GetProvider returns provider configuration

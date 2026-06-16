@@ -43,7 +43,7 @@ type TenantOAuthIdPConfigInitParameters struct {
 	Project *string `json:"project,omitempty" tf:"project,omitempty"`
 
 	// The name of the tenant where this OIDC IDP configuration resource exists
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/identityplatform/v1beta1.Tenant
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/identityplatform/v1beta1.Tenant
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	Tenant *string `json:"tenant,omitempty" tf:"tenant,omitempty"`
 
@@ -122,7 +122,7 @@ type TenantOAuthIdPConfigParameters struct {
 	Project *string `json:"project,omitempty" tf:"project,omitempty"`
 
 	// The name of the tenant where this OIDC IDP configuration resource exists
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/namespaced/identityplatform/v1beta1.Tenant
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/namespaced/identityplatform/v1beta1.Tenant
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",true)
 	// +kubebuilder:validation:Optional
 	Tenant *string `json:"tenant,omitempty" tf:"tenant,omitempty"`

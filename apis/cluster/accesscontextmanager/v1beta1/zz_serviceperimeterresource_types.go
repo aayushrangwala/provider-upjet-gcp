@@ -20,7 +20,7 @@ type ServicePerimeterResourceInitParameters struct {
 	DeletionPolicy *string `json:"deletionPolicy,omitempty" tf:"deletion_policy,omitempty"`
 
 	// The name of the Service Perimeter to add this resource to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.ServicePerimeter
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.ServicePerimeter
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",false)
 	PerimeterName *string `json:"perimeterName,omitempty" tf:"perimeter_name,omitempty"`
 
@@ -70,7 +70,7 @@ type ServicePerimeterResourceParameters struct {
 	DeletionPolicy *string `json:"deletionPolicy,omitempty" tf:"deletion_policy,omitempty"`
 
 	// The name of the Service Perimeter to add this resource to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.ServicePerimeter
+	// +crossplane:generate:reference:type=github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/accesscontextmanager/v1beta2.ServicePerimeter
 	// +crossplane:generate:reference:extractor=github.com/crossplane/upjet/v2/pkg/resource.ExtractParamPath("name",false)
 	// +kubebuilder:validation:Optional
 	PerimeterName *string `json:"perimeterName,omitempty" tf:"perimeter_name,omitempty"`

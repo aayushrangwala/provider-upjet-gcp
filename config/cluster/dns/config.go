@@ -7,7 +7,7 @@ package dns
 import (
 	"github.com/crossplane/upjet/v2/pkg/config"
 
-	"github.com/upbound/provider-gcp/v2/config/cluster/common"
+	"github.com/aayushrangwala/provider-upjet-gcp/v2/config/cluster/common"
 )
 
 // Configure configures individual resources by adding custom

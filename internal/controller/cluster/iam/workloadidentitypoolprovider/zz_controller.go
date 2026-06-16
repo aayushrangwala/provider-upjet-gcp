@@ -21,8 +21,8 @@ import (
 	"github.com/pkg/errors"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	v1beta2 "github.com/upbound/provider-gcp/v2/apis/cluster/iam/v1beta2"
-	features "github.com/upbound/provider-gcp/v2/internal/features"
+	v1beta2 "github.com/aayushrangwala/provider-upjet-gcp/v2/apis/cluster/iam/v1beta2"
+	features "github.com/aayushrangwala/provider-upjet-gcp/v2/internal/features"
 )
 
 // SetupGated adds a controller that reconciles WorkloadIdentityPoolProvider managed resources.
